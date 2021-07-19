@@ -25,8 +25,8 @@
 	<header id="header-section">
 
 		<!-- Navbar Starts -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
-			<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top overflow-hidden">
+			<div class="container mx-auto">
 				<a class="navbar-brand" href="#">
 					<img class="img-fluid" src="images/logo.png" alt="Ibnu Panda eCommerce Logo">
 				</a>
@@ -38,16 +38,19 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="#carousel-slider">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Shoes</a>
+							<a class="nav-link" href="#catagories-section">Catagories</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Backpack</a>
+							<a class="nav-link" href="#shop-shoes-section">Shoes</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Subscribe</a>
+							<a class="nav-link" href="#shop-bags-section">Backpack</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#subscribe-section">Subscribe</a>
 						</li>
 					</ul>
 				</div>
@@ -56,9 +59,10 @@
 		<!-- Navbar Ends -->
 
 		<!-- Carousel Slider Starts -->
-		<section id="carousel-slider" class="py-5">
-			<div id="carouselExampleControls" class="carousel slide container rounded px-5 py-3 bg-info bg-gradient"
-				data-bs-ride="carousel">
+		<section id="carousel-slider" class="py-5 my-5 overflow-hidden">
+			<div class="only-for-margin my-5"></div>
+			<div id="carouselExampleControls"
+				class="carousel slide container mx-auto rounded px-5 py-3 bg-info bg-gradient" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<div class="row d-flex align-items-center">
@@ -116,12 +120,16 @@
 			</div>
 		</section>
 		<!-- Carousel Slider Ends -->
+	</header>
+	<!-- =========== Header Section Ends =========== -->
 
+	<!-- =========== Main Section Starts =========== -->
+	<main id="main-section">
 		<!-- Catagories Starts -->
-		<section id="catagories-section">
-			<div class="container">
+		<section id="catagories-section" class="py-5 mb-5">
+			<div class="container mx-auto">
 				<div class="row g-4">
-					<div class="col-4">
+					<div class="col-lg-4 col-md-6">
 						<div
 							class="px-4 py-2 border bg-warning bg-gradient rounded d-flex justify-content-between align-items-center overflow-hidden">
 							<h1 class="text-light display-3 fw-bold">Watch</h1>
@@ -130,16 +138,16 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-lg-4 col-md-6">
 						<div
-							class="px-4 py-2 border bg-info bg-gradient rounded d-flex justify-content-between align-items-center overflow-hidden">
+							class="px-4 py-2 border bg-danger bg-gradient rounded d-flex justify-content-between align-items-center overflow-hidden">
 							<h1 class="text-light display-3 fw-bold">Bag</h1>
 							<div class="catagories-img">
 								<img src="images/categories/bag.png" width="100" alt="">
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-lg-4 col-md-6">
 						<div
 							class="px-4 py-2 border bg-success bg-gradient rounded d-flex justify-content-between align-items-center overflow-hidden">
 							<h1 class="text-light display-3 fw-bold">Shoes</h1>
@@ -152,18 +160,138 @@
 			</div>
 		</section>
 		<!-- Catagories Ends -->
-	</header>
-	<!-- =========== Header Section Ends =========== -->
 
-	<!-- =========== Main Section Starts =========== -->
-	<main id="main-section">
+		<!-- Shoes Starts -->
+		<section id="shop-shoes-section" class="py-5 mb-5">
+			<div class="container mx-auto">
+				<h1 class="display-1 text-center mb-5">Shoes</h1>
+				<div class="row mx-auto">
+					<div class="col-lg-4 col-md-6 gy-4">
+						<div class="card border-0 shadow" style="width: 20rem;">
+							<img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Supply 350</h5>
+								<p class="card-text">This is a longer card with supporting text below as a natural
+									lead-in to additional.</p>
+								<div class="pt-3">
+									<a href="#" class="btn btn-warning text-white">Bye Now &gt; &gt;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 gy-4">
+						<div class="card border-0 shadow" style="width: 20rem;">
+							<img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Nike 360</h5>
+								<p class="card-text">This is a longer card with supporting text below as a natural
+									lead-in to additional.</p>
+								<div class="pt-3">
+									<a href="#" class="btn btn-warning text-white">Bye Now &gt; &gt;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 gy-4">
+						<div class="card border-0 shadow" style="width: 20rem;">
+							<img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Red Airmax</h5>
+								<p class="card-text">This is a longer card with supporting text below as a natural
+									lead-in to additional.</p>
+								<div class="pt-3">
+									<a href="#" class="btn btn-warning text-white">Bye Now &gt; &gt;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Shoes Ends -->
 
+		<!-- Bags Starts -->
+		<section id="shop-bags-section" class="py-5 mb-5">
+			<div class="container mx-auto">
+				<h1 class="display-1 text-center mb-5">Backpack</h1>
+				<div class="row mx-auto row-cols-1 row-cols-md-3 g-4">
+					<div class="col-lg-4 col-md-6 gy-4">
+						<div class="card h-100 border-0 shadow" style="width: 20rem;">
+							<img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Red Laltu Bag</h5>
+								<h3>$120</h3>
+								<p class="card-text">This card has supporting text below as a natural lead-in to
+									additional content.</p>
+							</div>
+							<div class="card-footer bg-transparent border-0 pb-4">
+								<a href="#" class="btn btn-warning text-white">Bye Now &gt; &gt;</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 gy-4">
+						<div class="card h-100 border-0 shadow" style="width: 20rem;">
+							<img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Blue Nilu Bag</h5>
+								<h3>$360</h3>
+								<p class="card-text">This is a wider card with supporting text below as a natural
+									lead-in to additional content. This content is a little bit longer.</p>
+							</div>
+							<div class="card-footer bg-transparent border-0 pb-4">
+								<a href="#" class="btn btn-warning text-white">Bye Now &gt; &gt;</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 gy-4">
+						<div class="card h-100 border-0 shadow" style="width: 20rem;">
+							<img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Black Kaltu Bag</h5>
+								<h3>$256</h3>
+								<p class="card-text">This is a wider card with supporting text below as a natural
+									lead-in to additional content. This card has even longer content than the first to
+									show that equal height action.</p>
+							</div>
+							<div class="card-footer bg-transparent border-0 pb-4">
+								<a href="#" class="btn btn-warning text-white">Bye Now &gt; &gt;</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Bags Ends -->
+
+		<!-- Subscribe Starts -->
+		<section id="subscribe-section" class="py-5 mb-5">
+			<div class="container mx-auto bg-info bg-gradient p-5 rounded">
+				<div class="form-text text-center text-white mb-5">
+					<h1 class="display-4">Get In Touch</h1>
+					<p class="lead">Get updates on sales, specials and more!</p>
+				</div>
+				<div class="form mx-auto">
+					<form action="#" class="form">
+						<input class="form-control p-3" type="email" name="email" id="email"
+							placeholder="Enter You Email">
+						<button class="btn btn-warning my-3 p-2 form-control">Submit</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- Subscribe Ends -->
 	</main>
 	<!-- =========== Main Section Ends =========== -->
 
 	<!-- =========== Footer Section Starts =========== -->
-	<footer id="footer-section">
-
+	<footer id="footer-section" class="text-center mx-auto">
+		<p class="lead">
+			<small>
+				&copy; 2021. <a href="#carousel-slider" class="link-primary text-decoration-none">Ibnu | eCommerce.</a>
+				All rights reserved by <a href="https://github.com/ibnumahtab" target="_blank"
+					class="link-primary text-decoration-none">Ibnu Mahtab</a>
+			</small>
+		</p>
 	</footer>
 	<!-- =========== Footer Section Ends =========== -->
 
